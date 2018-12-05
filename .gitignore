@@ -18,9 +18,9 @@
 *.elf
 *.swp
 *.bin
-*.patch
+#*.patch
 *.cfgtmp
-!/toolchain/
+#*.so
 
 # output
 /output/210.bin
