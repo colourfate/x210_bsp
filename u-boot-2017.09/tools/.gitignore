@@ -1,4 +1,4 @@
-/_libfdt.so
+#/_libfdt.so
 /atmel_pmecc_params
 /bin2header
 /bmp_logo
