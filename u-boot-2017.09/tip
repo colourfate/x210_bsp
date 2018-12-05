@@ -1,0 +1,6 @@
+	// to debug
+	ldr r1, =0xE0200244 					
+	mov r0, #0
+	str r0, [r1]
+
+make s5p_goni_defconfig ARCH=arm CROSS_COMPILE=arm-linux-

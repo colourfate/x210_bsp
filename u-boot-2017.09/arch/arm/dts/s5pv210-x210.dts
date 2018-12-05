@@ -1,0 +1,36 @@
+/*
+ * Samsung's S5PC110-based Goni board device tree source
+ *
+ * Copyright (c) 2014 Google, Inc
+ *
+ * SPDX-License-Identifier:	GPL-2.0+
+ */
+
+/dts-v1/;
+
+#include "skeleton.dtsi"
+#include "s5pc110-pinctrl.dtsi"
+
+/ {
+	model = "Jiuding x210 based on S5PV210";
+	compatible = "samsung,goni", "samsung,s5pc110";
+
+	aliases {
+		serial2 = "/serial@e2900800";
+		console = "/serial@e2900800";
+		pinctrl0 = &pinctrl0;
+		/* i2c3 = &i2c_pmic; */
+	};
+
+	pinctrl0: pinctrl@e0200000 {
+		compatible = "samsung,s5pc110-pinctrl";
+		reg = <0xe0200000 0x1000>;
+	};
+
+	serial@e2900800 {
+		compatible = "samsung,exynos4210-uart";
+		reg = <0xe2900800 0x400>;
+		id = <2>;
+	};
+	/* 删除了I2C的PMIC供电管理 */
+};
