@@ -1,0 +1,110 @@
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# Normal rules
+#
+.*
+*.o
+*.o.*
+*.a
+*.s
+*.su
+*.mod.c
+*.i
+*.lst
+*.order
+*.elf
+*.swp
+*.bin
+*.patch
+*.cfgtmp
+!/toolchain/
+
+# output
+/output/210.bin
+/output/rootfs.tar
+/output/s5pv210-x210.dtb
+/output/u-boot.bin
+/output/uImage
+
+# host programs on Cygwin
+*.exe
+
+# Build tree
+/u-boot-2017.09/build-*
+
+#
+# uboot generic files
+#
+fit-dtb.blob
+/u-boot-2017.09/MLO*
+/u-boot-2017.09/SPL*
+/u-boot-2017.09/System.map
+/u-boot-2017.09/u-boot*
+/u-boot-2017.09/boards.cfg
+
+#
+# linux generic files
+#
+/linux-4.10/tags
+/linux-4.10/TAGS
+/linux-4.10/linux
+/linux-4.10/vmlinux
+/linux-4.10/vmlinux.32
+/linux-4.10/vmlinux-gdb.py
+/linux-4.10/vmlinuz
+/linux-4.10/System.map
+/linux-4.10/Module.markers
+#
+# git files that we don't want to ignore even it they are dot-files
+#
+!.gitignore
+!.mailmap
+
+#
+# Generated files
+#
+/u-boot-2017.09/LOG
+/u-boot-2017.09/spl/
+/u-boot-2017.09/tpl/
+/u-boot-2017.09/defconfig
+
+#
+# Generated include files
+#
+/u-boot-2017.09/include/config/
+/u-boot-2017.09/include/generated/
+/linux-4.10/include/config
+/linux-4.10/include/generated
+/linux-4.10/arch/*/include/generated
+
+# stgit generated dirs
+patches-*
+.stgit-edit.txt
+
+# quilt's files
+patches
+series
+
+# gdb files
+.gdb_history
+
+# cscope files
+cscope.*
+
+# tags files
+/tags
+/ctags
+/etags
+
+# gnu global files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+
+*.orig
+*~
+\#*#
