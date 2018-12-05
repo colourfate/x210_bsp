@@ -38,7 +38,7 @@
 #
 # uboot generic files
 #
-fit-dtb.blob
+/u-boot-2017.09/fit-dtb.blob
 /u-boot-2017.09/MLO*
 /u-boot-2017.09/SPL*
 /u-boot-2017.09/System.map
@@ -81,15 +81,15 @@ fit-dtb.blob
 /linux-4.10/arch/*/include/generated
 
 # stgit generated dirs
-patches-*
-.stgit-edit.txt
+#patches-*
+#.stgit-edit.txt
 
 # quilt's files
-patches
-series
+#patches
+#series
 
 # gdb files
-.gdb_history
+#.gdb_history
 
 # cscope files
 cscope.*
@@ -100,11 +100,11 @@ cscope.*
 /etags
 
 # gnu global files
-GPATH
-GRTAGS
-GSYMS
-GTAGS
+#GPATH
+#GRTAGS
+#GSYMS
+#GTAGS
 
-*.orig
-*~
-\#*#
+#*.orig
+#*~
+#\#*#
