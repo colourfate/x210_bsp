@@ -44,6 +44,8 @@ if [ $# == 0 ]; then
     cp output/images/rootfs.tar $BASEPATH/output
     cd $BASEPATH
 
+    echo -e "\n编译完成，全部输出到output\\\n"
+
 elif [ $# == 1 ]; then
     if [ $1 == "help" ]; then
         echo -e "./build.sh [选项]\n"
