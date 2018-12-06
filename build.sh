@@ -44,7 +44,9 @@ if [ $# == 0 ]; then
     cp output/images/rootfs.tar $BASEPATH/output
     cd $BASEPATH
 
-    echo -e "\n编译完成，全部输出到output\\\n"
+    echo
+    echo 编译完成，全部输出到output\
+    echo
 
 elif [ $# == 1 ]; then
     if [ $1 == "help" ]; then
